@@ -1,5 +1,5 @@
 # GIM
-Esercizi di Grafica in movimento 2023
+Esercizi di Grafica in Movimento 2023
 
 Esercizio 1A
 
