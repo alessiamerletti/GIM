@@ -14,9 +14,9 @@ Esercizi di Grafica in Movimento CV1 2023
 
 ### Esercizio 3 
 
-[Pong](es_3/1_pong/index.html) 
-[Neve](es_3/2_neve/index.html) 
-[Pioggia](es_3/3_pioggia/index.html)
+[Pong](es_3/1_pong/index.html)  
+[Neve](es_3/2_neve/index.html)  
+[Pioggia](es_3/3_pioggia/index.html) 
 
 ### Esercizio 4
 
