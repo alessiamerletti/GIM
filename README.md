@@ -12,7 +12,7 @@ Esercizi di Grafica in Movimento CV1 2023
 [spostamento_2](es_1A/spostamento_2.html)  
 [spostamento_3](es_1A/spostamento_3.html)  
 
-###Esercizio 3 
+### Esercizio 3 
 
-[Pong] (es_3/1_pong/index.html)
+[Pong](es_3/1_pong/index.html)
 
