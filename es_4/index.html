@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orologio Bersaglio</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+	  background-color: rgb(255, 255, 255);
+    }
+
+    #myCanvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+
+  <script>
+    function drawConcentricCircles() {
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      canvas.width = width;
+      canvas.height = height;
+
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+
+      var radius1 = Math.min(width, height) * 0.4;
+      var radius2 = radius1 * 0.6;
+      var radius3 = radius2 * 0.6;
+
+      function animateRedCircle() {
+        var currentTime = new Date().getTime();
+        var seconds = Math.floor(currentTime / 1000); // Calcola i secondi attuali
+
+        var blue = (seconds % 2 === 0) ? 255 : 128; // Alterna tra due tonalità di blu
+
+        context.clearRect(0, 0, canvas.width, canvas.height); // Pulisce la canvas
+
+        context.beginPath();
+        context.arc(centerX, centerY, radius1, 0, 2 * Math.PI, false);
+        context.fillStyle = 'rgb(0, 0, ' + blue + ')';
+        context.fill();
+
+        animateGreenCircle(); // Chiamata alla funzione per animare il cerchio verde
+        animateBlueCircle(); // Chiamata alla funzione per animare il cerchio blu
+      }
+
+      function animateGreenCircle() {
+        var currentTime = new Date();
+        var minutes = currentTime.getMinutes(); // Ottiene i minuti attuali
+
+        var red = (minutes % 2 === 0) ? 255 : 128; // Alterna tra due tonalità di rosso
+
+        context.beginPath();
+        context.arc(centerX, centerY, radius2, 0, 2 * Math.PI, false);
+        context.fillStyle = 'rgb(' + red + ', 0, 0)';
+        context.fill();
+      }
+
+      function animateBlueCircle() {
+        var currentTime = new Date();
+        var hours = currentTime.getHours(); // Ottiene le ore attuali
+
+        var yellow = (hours % 2 === 0) ? 255 : 128; // Alterna tra due tonalità di giallo
+
+        context.beginPath();
+        context.arc(centerX, centerY, radius3, 0, 2 * Math.PI, false);
+        context.fillStyle = 'rgb(' + yellow + ', ' + yellow + ', 0)';
+        context.fill();
+      }
+
+      setInterval(animateRedCircle, 1000); // Richiama la funzione ogni secondo
+    }
+
+    drawConcentricCircles();
+  </script>
+</body>
+</html>
