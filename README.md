@@ -18,7 +18,7 @@ Esercizi di Grafica in Movimento CV1 2023
 
 ### Esercizio 2A
 
-[parole](es_2A/template/index.html)
+[forma_e_senso](es_2A/template/index.html)
 
 ### Esercizio 2B
 
@@ -28,13 +28,13 @@ Esercizi di Grafica in Movimento CV1 2023
 
 ### Esercizio 3 
 
-[Pong](es_3/1_pong/index.html)  
-[Neve](es_3/2_neve/index.html)  
-[Pioggia](es_3/3_pioggia/index.html) 
+[pong](es_3/1_pong/index.html)  
+[neve](es_3/2_neve/index.html)  
+[pioggia](es_3/3_pioggia/index.html) 
 
 ### Esercizio 4
 
-[Orologio](es_4/index.html)
+[orologio](es_4/index.html)
 
 
 
