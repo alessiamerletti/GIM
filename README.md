@@ -34,6 +34,8 @@ Esercizi di Grafica in Movimento CV1 2023
 
 ### Esercizio 4
 
+Descrizione: l'orologio ideato per l'esercizio quattro è ispirato al bersaglio del tiro con l'arco. Il cerchio di diamentro maggiore alterna le tonalità di blu a tempo dei secondi, il cerchio successivo varia le tonalità di rosso a tempo dei minuti mentre il cerchio più piccolo alterna i toni gialli in base alle ore. 
+
 [orologio](es_4/index.html)
 
 
